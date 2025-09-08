@@ -1,0 +1,31 @@
+{
+  "name": "petconnect",
+  "version": "0.0.1",
+  "private": true,
+  "description": "PetConnect aims to create a centralized platform that facilitates pet adoption, fostering, lost & found pet recovery, and community interaction among pet lovers.",
+  "scripts": {
+    "client": "cd client && npm run dev",
+    "server": "cd server && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build-client": "cd client && npm run build",
+    "build-server": "cd server && npm run build",
+    "build": "concurrently \"npm run build-server\" \"npm run build-client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srishticampus/Pet_Connect.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://https://github.com/srishticampus/Pet_Connect/issues"
+  },
+  "homepage": "https://github.com/srishticampus/Pet_Connect#readme",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
